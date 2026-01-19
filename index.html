@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impostor – Mr White Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div id="toast" class="toast hidden"></div>
+
+<body>
+<div class="app">
+
+<h1>WHO'S SPY</h1>
+
+<div id="step1">
+  <h2>Masukkan Nickname</h2>
+  <input id="nickInput" placeholder="Nickname">
+  <button onclick="addNick()">Tambah</button>
+  <div id="nickList"></div>
+  <button onclick="startSetup()">Mulai</button>
+</div>
+
+<div id="cards" class="grid hidden"></div>
+
+<div id="voting" class="hidden">
+  <h2>Voting</h2>
+  <div class="grid" id="voteGrid"></div>
+</div>
+
+</div>
+
+<div id="overlay" class="overlay hidden">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
